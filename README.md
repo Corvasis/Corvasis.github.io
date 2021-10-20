@@ -1,3 +1,3 @@
-Ерлан Кеменгер vk.com/naffatun
+Ерлан Кеменгер 
 # Corvasis.github.io
 Мой первый (нет) сайт
