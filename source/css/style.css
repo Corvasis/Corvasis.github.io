@@ -19,6 +19,8 @@ nav{
 	width: 100%;
 	height: 60px;
 	background: #344051;
+	position: fixed;
+	z-index: 1;
 }
 
 .logo{
@@ -27,6 +29,16 @@ nav{
 	line-height: 60px;
 	padding-left: 288px;
 	float: left;
+	animation: comming 2s;
+}
+
+@keyframes comming{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
 }
 
 .menu{
@@ -42,6 +54,38 @@ nav{
 	margin-right: 30px;
 	font-size: 16px;
 	text-transform: uppercase;
+	animation: navmove 2s ease forwards;
+}
+
+@keyframes navmove{
+	from{
+		opacity: 0;
+		margin-top: -80px;
+	}
+	to{
+		opacity: 1;
+		margin-top: 0px;
+	}
+}
+
+
+.menu li a{
+	transition: all 0.4s;
+	color: white;
+	transform: scale(1);
+	display: inline-block;
+}
+
+.menu li a:visited{
+	color: white;
+}
+
+.menu li a:hover{
+	color: #e88604;
+}
+
+.menu li a:active{
+	transform: scale(1.1);
 }
 
 .main{
@@ -55,6 +99,20 @@ nav{
 	margin: 285px 0px 0px 204px;
 	color: #2c384a;
 	text-align: center;
+	animation: titlemove 1s ease forwards;
+	animation-delay: 1s;
+	opacity: 0;
+}
+
+@keyframes titlemove{
+	from{
+		opacity: 0;
+		margin-left: -500px;
+	}
+	to{
+		opacity: 1;
+		margin-left: 285px;
+	}
 }
 
 .title_container h1{
@@ -69,14 +127,25 @@ nav{
 }
 
 .title_container input{
-	height: 30px;
+	height: 40px;
+	width: 120px;
 	text-align: center;
 	border: 2px solid #6d7682;
 	background: none;
 	border-radius: 5px;
 	color: #6d7682;
-	padding: 0px 8px;
 	margin: 40px 14px 0px 14px;
+	transition: all 0.4s;
+	transform: scale(1);
+}
+
+.title_container input:hover{
+	background: #344051;
+	color: white;
+}
+
+.title_container input:active{
+	transform: scale(1.1);
 }
 
 .level1{
@@ -97,7 +166,8 @@ nav{
 }
 
 .level1-2 input{
-	height: 30px;
+	height: 40px;
+	width: 150px;
 	text-align: center;
 	border: 2px solid #6d7682;
 	background: none;
@@ -107,6 +177,17 @@ nav{
 	padding-right: 5px; 
 	background: url("../img/icon1.png") 1% 50%/19px no-repeat;
 	margin-bottom: 100px;
+	transition: all 0.4s;
+	transform: scale(1);
+}
+
+.level1-2 input:hover{
+	background: #344051;
+	color: white;
+}
+
+.level1-2 input:active{
+	transform: scale(1.1);
 }
 
 .main-level2{
@@ -207,6 +288,13 @@ nav{
 	text-align: center;
 	color: #1c2534;
 }
+
+select{
+	height: 30px;
+	width: 500px;
+	background-color: #eeeeee;
+}
+
 
 .level4{
 	margin: 20px;
@@ -312,8 +400,8 @@ nav{
 	color: #ffffff;
 }
 
-.level7{
-
+.level7 img{
+	padding-bottom: 40px;
 }
 
 .level7 h2{
@@ -327,34 +415,65 @@ nav{
 	margin-bottom: 40px;
 }
 
+.main-level7 h4{
+	padding-top: 15px
+}
+
 .level7 img{
-	margin-bottom: 40px;
+
 }
 
 .level7-1{
 	float: left;
 	margin-left: 330px;
-	padding: 70px;
 	text-align: center;
 }
 
 .level7-2{
-	margin: 0px 115px 0px 25px;
+	margin-left: 235px;
 	float: left;
-	padding: 70px;
 	text-align: center;
 }
 
 .level7-3{
-	padding: 70px;
+	float: left;
+	text-align: center;
+	margin-left: 245px;
 }
 
 .level7-4{
 	padding-bottom: 40px;
 	font-size: 20px;
+	font-weight: bold;
 }
 
 .level7-5{
 	float: left;
+	margin-left: 431px;
+	opacity: 70%;
+}
 
+.level7-6{
+	margin-left: 894px;
+	opacity: 70%;
+}
+
+.level7-7{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	opacity: 70%;
+}
+
+.level7-8{
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+span{
+	margin-left: 500px;
+}
+
+span img{
+	padding-right: 64px;
+	margin-bottom: 50px;
 }
