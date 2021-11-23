@@ -81,11 +81,12 @@ nav{
 }
 
 .menu li a:hover{
-	color: #e88604;
+	background-color: #495c77;
 }
 
 .menu li a:active{
 	transform: scale(1.1);
+	background-color: #232a34;
 }
 
 .main{
@@ -271,6 +272,12 @@ nav{
 	color: #ffffff;
 	margin-top: 15px;
 	padding: 7px;
+	transform: scale(1)
+}
+
+.level3-1 input:hover{
+	background-color: #9afbf3;
+	transform: scale(1.1);
 }
 
 .level3-2{
@@ -328,6 +335,7 @@ select{
 	background: url("../img/kartinka.jpg") center/cover no-repeat;
 	padding-bottom: 100px;
 	color: #323e4f;
+	position: fixed;
 }
 
 .level5{
@@ -445,6 +453,8 @@ select{
 	padding-bottom: 40px;
 	font-size: 20px;
 	font-weight: bold;
+	height: 60px;
+	width: 700px;
 }
 
 .level7-5{
@@ -453,9 +463,17 @@ select{
 	opacity: 70%;
 }
 
+.level7-5:active{
+	opacity: 1;
+}
+
 .level7-6{
 	margin-left: 894px;
 	opacity: 70%;
+}
+
+.level7-6:active{
+	opacity: 1;
 }
 
 .level7-7{
@@ -464,9 +482,18 @@ select{
 	opacity: 70%;
 }
 
+.level7-7:active{
+	opacity: 1;
+}
+
 .level7-8{
 	text-align: center;
 	padding-bottom: 30px;
+	transform: scale(1);
+}
+
+.level7-8:active{
+	transform: scale(1.1)
 }
 
 span{
@@ -476,4 +503,16 @@ span{
 span img{
 	padding-right: 64px;
 	margin-bottom: 50px;
+}
+
+span img{
+	transform: scale(1);
+}
+
+span img:hover{
+	transform: scale(0.9);
+}
+
+span img:active{
+	transform: scale(1.1);
 }
