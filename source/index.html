@@ -7,37 +7,52 @@
 	<meta name="robots" content="all">
 	<meta property="og:title" content="Это моя первая страница...">
 	<title>Document</title>
-	<link rel="stylesheet" href="css/loader.css">
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 		<header>
 		<nav>
-			<div class="logo">Ерлан Кеменгер</div>
-			<div class="menu">
-				<ul>
-					<li><a href="">Обо мне</a></li>
-					<li><a href="">Услуги</a></li>
-					<li><a href="">Кейсы</a></li>
-					<li><a href="">Прайс</a></li>
-					<li><a href="">Отзывы</a></li>
-					<li><a href="">Контакты</a></li>
-				</ul>
+			<div class="container">
+			<div class="row">
+				<div class="px-0 col-xxl-3 col-xl-3 col-lg-3 col-7 offset-xxl-1 offset-xl-1 offset-lg-1"><div class="logo">Ерлан Кеменгер</div></div>
+				<div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-2 offset-xl-1 d-none d-lg-block"><div class="menu">
+					<ul>
+						<li><a href="#">Обо мне</a></li>
+						<li><a href="#">Услуги</a></li>
+						<li><a href="#">Кейсы</a></li>
+						<li><a href="#">Прайс</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul></div>
+				</div>
+				<div class="col-5 d-flex flex-column justify-content-center align-items-end d-lg-none"><div class="dropdown">
+  					<a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Навигация</a>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						<li><a class="dropdown-item" href="#">Услуги</a></li>
+						<li><a class="dropdown-item" href="#">Кейсы</a></li>
+						<li><a class="dropdown-item" href="#">Прайс</a></li>
+						<li><a class="dropdown-item" href="#">Отзывы</a></li>
+						<li><a class="dropdown-item" href="#">Контакты</a></li>
+  					</ul>
+				</div></div>
 			</div>
 		</nav>
 	</header>
-	<div class="lds-hourglass"></div>
-	<div class="main"><div class="title_container">
+
+	<div class="main">
+		<div class="container h-100"><div class="row align-items-center h-100"><div class="col-lg-6 mt-5 pt-5"><div class="title_container mt-5">
 		<h1>Привет <br> Я Ерлан Кеменгер</h1>
-		<h4>Фулл стек веб-разработчик и Android-разработчик</h4>
+		<h4><i class="fa fa-css3" aria-hidden="true"></i> Фулл стек веб-разработчик и Android-разработчик</h4>
 		<input type="button" value="Обо мне">
 		<input type="button" value="Мои работы">
-	</div></div>
+	</div></div></div></div></div>
 		
 	<div class="level1">
-			<h2>ОБО МНЕ</h2>
+		<h2>ОБО МНЕ</h2>
 		<img src="img/orange.png">
 		<br><br><br>
 		<img src="img/mini-boy.png">
@@ -48,28 +63,29 @@
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur aliquid tempora, ullam, maxime consectetur repudiandae! Laudantium, est maiores ipsa <br> aperiam corporis voluptas ratione, quibusdam deserunt, nesciunt facilis quos omnis vitae ab consectetur, similique quaerat.</p>
 		<br><br>
 		<input type="button" value="Скачать резюме">
-	</div>	
+	</div>
 	
 	<div class="main-level2"><div class="level2"><h2>ЧТО Я УМЕЮ</h2><img src="img/orange.png"></div>
-	<div class="level2-1">
-		<img src="img/laptop.png">
-		<h3>Веб-дизайн</h3>
-		<p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Libero, repudiandae <br>maxime harum architecto modi culpa <br> est velit nostrum dolorem nesciunt.</p>	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm">
+				<img src="img/laptop.png">
+				<h3>Веб-дизайн</h3>
+				<p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Libero, repudiandae <br>maxime harum architecto modi culpa <br> est velit nostrum dolorem nesciunt.</p></div>
+			<div class="col-sm">
+				<img src="img/sign.png">
+				<h3>Разработка</h3>
+				<p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Libero, repudiandae <br>maxime harum architecto modi culpa <br> est velit nostrum dolorem nesciunt.</p></div>
+			<div class="col-sm">
+				<img src="img/rocket.png">
+				<h3>CEO-оптимизация</h3>
+				<p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Libero, repudiandae <br>maxime harum architecto modi culpa <br> est velit nostrum dolorem nesciunt.</p></div>
+			<div class="col-sm">
+				<img src="img/gramophone.png">
+				<h3>Веб-дизайн</h3>
+				<p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Libero, repudiandae <br>maxime harum architecto modi culpa <br> est velit nostrum dolorem nesciunt.</p></div>
+		</div>
 	</div>
-	<div class="level2-2">
-		<img src="img/sign.png">
-		<h3>Разработка</h3>
-		<p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Libero, repudiandae <br>maxime harum architecto modi culpa <br> est velit nostrum dolorem nesciunt.</p>	
-	</div>
-	<div class="level2-3">
-		<img src="img/rocket.png">
-		<h3>CEO-оптимизация</h3>
-		<p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Libero, repudiandae <br>maxime harum architecto modi culpa <br> est velit nostrum dolorem nesciunt.</p>	
-	</div>
-	<div class="level2-4">
-		<img src="img/gramophone.png">
-		<h3>Веб-дизайн</h3>
-		<p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Libero, repudiandae <br>maxime harum architecto modi culpa <br> est velit nostrum dolorem nesciunt.</p>	
 	</div></div>
 	
 	
@@ -91,12 +107,13 @@
 	</div>
 
 	
-	<div class="main-level4"><div class="level4">
-		<h2>Расчет стоимости</h2>
+	<br><br><br><div class="main-level4"><div class="level4">
+		<h2>РАСЧЕТ СТОИМОСТИ</h2>
 	</div>
 	<div class="level4-1">
 		<h3>ТИП САЙТА</h3>
 		<select name="list1" id="list" placeholder="Выберите пункт...">
+			<option value="opt0" selected="" disabled="">Выберите пункт</option>
 			<option value="opt1">1</option>
 			<option value="opt2">2</option>
 		</select>
@@ -104,6 +121,7 @@
 	<div class="level4-2">
 		<h3>ДИЗАЙН</h3>
 		<select name="list2" id="list" placeholder="Выберите пункт...">
+			<option value="opt0" selected="" disabled="">Выберите пункт</option>
 			<option value="opt1">1</option>
 			<option value="opt2">2</option>
 		</select>
@@ -111,6 +129,7 @@
 	<div class="level4-3">
 		<h3>АДАПТИВНОСТЬ</h3>
 		<select name="list3" id="list" placeholder="Выберите пункт...">
+			<option value="opt0" selected="" disabled="">Выберите пункт</option>
 			<option value="opt1">1</option>
 			<option value="opt2">2</option>
 		</select>
@@ -123,26 +142,29 @@
 	<div class="main-level5"><div class="level5"><h2>НЕМНОГО СТАТИСТИКИ</h2>
 		<img src="img/orange.png">
 	</div>
-	<div class="level5-1">
-		<img src="img/smile.png">
-		<h3>120</h3>
-		<p>СЧАСТЛИВЫХ КЛИЕНТОВ</p>	
-	</div>
-	<div class="level5-2">
-		<img src="img/skobki.png">
-		<h3>4600</h3>
-		<p>ЧАСОВ РАБОТЫ</p>	
-	</div>
-	<div class="level5-3">
-		<img src="img/galochka.png">
-		<h3>340</h3>
-		<p>ПРОЕКТОВ ЗАВЕРШЕНО</p>	
-	</div>
-	<div class="level5-4">
-		<img src="img/kubok.png">
-		<h3>23</h3>
-		<p>НАГРАД ПОЛУЧЕНО</p>	
-	</div></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm">
+				<img src="img/smile.png">
+				<h3>120</h3>
+				<p>СЧАСТЛИВЫХ КЛИЕНТОВ</p>	
+			</div>
+			<div class="col-sm">
+				<img src="img/skobki.png">
+				<h3>4600</h3>
+				<p>ЧАСОВ РАБОТЫ</p>	
+			</div>
+			<div class="col-sm">
+				<img src="img/galochka.png">
+				<h3>340</h3>
+				<p>ПРОЕКТОВ ЗАВЕРШЕНО</p>	
+			</div>
+			<div class="col-sm">
+				<img src="img/kubok.png">
+				<h3>23</h3>
+				<p>НАГРАД ПОЛУЧЕНО</p>	
+			</div>
+		</div></div></div>
 	
 	
 	<div class="level6">
@@ -168,35 +190,34 @@
 			<center><img src="img/orange.png"></center>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Deserunt odit fugit quis voluptas libero accusantium.</p>
 		</div>
-		<div class="level7-1">
-			<img src="img/geo.png">
-			<h4>Санкт-Петербург <br>Невский проспект11</h4>
-		</div>
-		<div class="level7-2">
-			<img src="img/convert.png">
-			<h4>random@gmail.com</h4>
-		</div>
-		<div class="level7-3">
-			<img src="img/tele.png">
-			<h4>+7 999 999-99-99</h4>
-		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm">
+					<img src="img/geo.png">
+					<h4>Санкт-Петербург <br>Невский проспект11</h4></div>
+				<div class="col-sm">
+					<img src="img/convert.png">
+					<h4>random@gmail.com</h4></div>
+				<div class="col-sm">	
+					<img src="img/tele.png">
+					<h4>+7 999 999-99-99</h4></div>
 		<br><br><br><br><br><br><br><br>
 		<center><div class="level7-4">
 			<h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
 		</div></center>
 		<form> 
-			<div class="level7-5">
-				<input type="text" name="text_input" placeholder="Имя">
-			</div>
-			<div class="level7-6">
-				<input type="text" name="text_input" placeholder="Email">
-			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm"><input type="text" name="text_input" placeholder="Имя"></div>
+					<div class="col-sm"><input type="text" name="text_input" placeholder="Email"></div>
+				</div></div>
 			<center><div class="level7-7">
 				<textarea name="name1" id="1" cols="80" rows="10" placeholder="Сообщение"></textarea>
 			</div></center>
 			<div class="level7-8">
 				<input type="submit" value="Отправить">
 			</div>
+		</form>
 			<span>
 				<a href="https://www.facebook.com/"><img src="img/facebook.png"></a>
 				<a href="https://www.twitter.com/"><img src="img/twitter.png"></a>
@@ -205,7 +226,7 @@
 				<a href="https://www.instagram.com/"><img src="img/instagram.png"></a>
 				<a href="https://elderscrolls.fandom.com"><img src="img/in.png"></a>
 			</span>
-		</form> 
 	</div>
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
