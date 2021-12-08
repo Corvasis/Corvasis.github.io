@@ -8,6 +8,7 @@
 
 body{
 	font-family: FranklinGot, sans-serif;
+	max-width: 100%;
 }
 
 h2{
@@ -25,6 +26,7 @@ p{
 
 nav{
 	width: 100%;
+	max-width: 100%;
 	height: 56px;
 	background: #344051;
 	position: fixed;
@@ -145,7 +147,7 @@ nav{
 	background: none;
 	border-radius: 5px;
 	color: #6d7682;
-	margin: 40px 14px 0px 14px;
+	margin: 30px 14px 0px 14px;
 	transition: all 0.4s;
 	transform: scale(1);
 }
@@ -184,8 +186,7 @@ nav{
 	background: none;
 	border-radius: 5px;
 	color: #6d7682;
-	padding-left: 20px;
-	padding-right: 5px; 
+	padding: 0px 5px 0px 20px;
 	background: url("../img/icon1.png") 1% 50%/19px no-repeat;
 	margin-bottom: 100px;
 	transition: all 0.4s;
@@ -243,18 +244,19 @@ nav{
 .level3 img{
 	text-align: center;
 	margin-bottom: 40px;
+	max-width: 100%;
 }
 
 .level3-1{
 	margin-left: 175px;
+	padding-right: 70px;
 	font-size: 17px;
 	float: left;
 }
 
 .level3-1 h3{
 	font-weight: bold;
-	padding-bottom: 15px;
-	padding-top: 15px;
+	padding: 15px 0px 15px 0px;
 	color: #384354;
 }
 
@@ -286,6 +288,10 @@ nav{
 .main-level4{
 	text-align: center;
 	color: #1c2534;
+}
+
+.main-level4 img{
+	max-width: 100%;
 }
 
 select{
@@ -400,20 +406,23 @@ select{
 	width: 700px;
 }
 
+input[type=text]{
+	width: 400px;
+	height: 40px;
+	opacity: 70%;
+}
+
 .level7-7{
 	padding-top: 20px;
 	padding-bottom: 20px;
 	opacity: 70%;
 }
 
-.level7-7:active{
-	opacity: 1;
-}
-
 .level7-8{
 	text-align: center;
 	padding-bottom: 30px;
 	transform: scale(1);
+	background: none;
 }
 
 .level7-8:active{
@@ -421,9 +430,9 @@ select{
 }
 
 span{
-	margin: 1% 25%;
+	margin: 3% 0% 3% 0%;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
 
 span img{
